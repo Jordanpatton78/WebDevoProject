@@ -1897,149 +1897,6 @@ input, select, textarea {
 				padding-left: 0;
 				margin-left: 0;
 			}
-
-/* Icons */
-
-	ul.icons {
-		position: relative;
-		background: rgba(128, 128, 128, 0.05);
-		border-radius: 4em;
-		display: inline-block;
-		padding: 0.35em 0.75em 0.35em 0.75em;
-		font-size: 1.25em;
-		cursor: default;
-		list-style: none;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding-left: 0;
-		}
-
-			ul.icons li a {
-				display: inline-block;
-				background: none;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				text-align: center;
-				border-radius: 100%;
-				border: 0;
-				color: inherit;
-			}
-
-				ul.icons li a:hover {
-					color: #ef8376;
-				}
-
-/* Form */
-
-	form label {
-		display: block;
-		font-weight: 400;
-		color: #483949;
-		margin: 0 0 1em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #fafafa;
-		width: 100%;
-		border-radius: 0.5em;
-		border: solid 1px #E5E5E5;
-		padding: 1em;
-		-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #fff;
-			border-color: #df7366;
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1em;
-	}
-
-	form textarea {
-		min-height: 9em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
-	}
-
-	form :-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
-
-/* Table */
-
-	table {
-		width: 100%;
-	}
-
-		table.default {
-			width: 100%;
-		}
-
-			table.default tbody tr {
-				border-top: solid 1px #e5e5e5;
-			}
-
-				table.default tbody tr:first-child {
-					border-top: 0;
-				}
-
-				table.default tbody tr:nth-child(2n+1) {
-					background: #fafafa;
-				}
-
-			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
-			}
-
-			table.default th {
-				text-align: left;
-				font-weight: 400;
-				padding: 0.5em 1em 0.5em 1em;
-			}
-
-			table.default thead {
-				border-bottom: solid 2px #e5e5e5;
-			}
-
-			table.default tfoot {
-				border-top: solid 2px #e5e5e5;
-			}
-
 /* Button */
 
 	input[type="button"],
@@ -2106,13 +1963,10 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url('../Images/102a1177_2.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
 		cursor: default;
 	}
 
@@ -2120,15 +1974,20 @@ input, select, textarea {
 			content: '';
 			display: inline-block;
 			vertical-align: middle;
-			height: 100%;
 		}
 
 		#header .inner {
 			position: relative;
-			z-index: 1;
-			margin: 0;
+			padding: 8%;
+			margin:0;
+			z-index:1;
 			display: inline-block;
-			vertical-align: middle;
+		}
+		.dance{
+			color: blue;
+		}
+		#department{
+			color:white;
 		}
 
 		#header header {
@@ -2205,10 +2064,13 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 100%;
+		height:100%;
 		text-align: center;
 		padding: 1.5em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
+        background-color: white;
+		background-image:url("download.jpeg");
 	}
 
 		#nav > ul {
@@ -2425,7 +2287,7 @@ input, select, textarea {
 
 	.carousel {
 		position: relative;
-		overflow: hidden;
+		overflow: auto;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
 	}
@@ -2455,6 +2317,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.35s ease-in-out;
 				transition: background-color 0.35s ease-in-out;
 				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
 			}
 
 			.carousel .forward:after, .carousel .backward:after {
@@ -2502,7 +2365,7 @@ input, select, textarea {
 		.carousel .reel {
 			white-space: nowrap;
 			position: relative;
-			-webkit-overflow-scrolling: touch;
+			overflow: auto;
 			padding: 0 2em 0 2em;
 		}
 
@@ -2964,6 +2827,9 @@ input, select, textarea {
 			#header {
 				background-attachment: scroll;
 				padding: 2.5em 0 0 0;
+                justify-content: space-between;
+
+				
 			}
 
 				#header .inner {
@@ -3003,6 +2869,7 @@ input, select, textarea {
 
 			#nav {
 				display: none;
+				margin-bottom: 10%;
 			}
 
 		/* Banner */
